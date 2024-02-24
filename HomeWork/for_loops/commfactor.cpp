@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+
+    int a,b,k;
+    cout<<"enter first number: ";
+    cin>>a;
+    cout<<"enter second number: ";
+    cin>>b;
+    for(int i=1; i<a; i++){
+        if(a%i==0 && b%i==0)
+        k=i;
+    }
+    cout<<"common factor = "<<k;
+}
