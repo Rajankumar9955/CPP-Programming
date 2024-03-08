@@ -1,21 +1,21 @@
-#include<iostream>
-using namespace std;
-int main()
-{
- int a,r,b=0;
- cout<<"Enter any number: ";
- cin>>a; 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//  int a,r,b=0;
+//  cout<<"Enter any number: ";
+//  cin>>a; 
  
  
-       while(a!=0)
-       {
-        r=a%10;
-        b=b*10+r;
-        a=a/10;
-
-       }
-       cout<<b;
- }
+//        while(a!=0)
+//        {
+//         r=a%10;
+//         b=b*10+r;
+//         a=a/10;
+        
+//        }
+//        cout<<b;
+//  }
 
 
 
@@ -42,6 +42,10 @@ int main()
   // {
   //   cout<<"not prime";
   // }
+
+
+
+
 /*int main()
 {
   int a=10;
@@ -52,6 +56,8 @@ int main()
   }
   cout<<"done";
 }*/
+
+
  /* int b,p,c;
   cout<<"enter base\n";
   cin>>b;
@@ -65,6 +71,8 @@ c=1;
   }
   cout<<"output="<<c;
 }*/
+
+
 /*int main()
 {
   int a,b=0;
@@ -76,4 +84,181 @@ c=1;
     a--;
   }while(a>=1);
   cout<<"sum="<<b;
+// }
+
+
+*/
+
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//   int a,b=0,c;
+//   cout<<"enter any number:";
+//   cin>>a;
+//   c=a;
+//   while(c>=1)
+//   {
+//      if(a%c==0)
+//      {
+//       b++;
+//      }
+//      c--;
+//   }
+//   if(b==2)
+//   {
+//     cout<<"prime number";
+//   }
+//   else
+//   {
+//     cout<<"Not prime";
+//   }
+
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//   int a,b=0,c;
+//   cout<<"enter any number:";
+//   cin>>a;
+//   a=c;
+//   while(c>=1)
+//   {
+//     if(a%c==0)
+//     {
+//       b++;
+//     }
+//    c--;
+//   }
+  
+
+// if(b==2)
+// {
+//   cout<<"prime number";
+// }
+// else
+// {
+//   cout<<"not prime";
+// }
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//   int a,b=0,c;
+//   cout<<"enter any number:";
+//   cin>>a;
+//   a=c;
+//   while(c>=1)
+//   {
+//     if(a%c==0)
+//     {
+//       b++;
+
+//     }
+//     c--;
+//   }
+//   if(b==2)
+//   {
+//     cout<<"Prime number:";
+//   }
+//   else
+//   {
+//     cout<<"NOt prime ";
+//   }
+// } 
+
+// #include<iostream>
+// using namepace std;
+// int main()
+// {
+//   int a,b=0,c,
+//   cout<<"enter any number: ";
+//   cin>>a;
+//   a=c;
+//   while(c>=1)
+//   {
+//     if(a%c==0)
+//     {
+//       b++;
+//     }
+//     c--;
+//   }
+//   if(b==2)
+//   {
+//     cout<<"prime number";
+//   }
+//   else
+//   {
+//     cout<<"not prime";
+//   }
+// }
+ 
+
+
+
+
+ 
+/*#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b=0,c;
+  cout<<"enter any number:";
+  cin>>a;
+  a=c;
+  while(a>=1)
+  {
+    if(a%c==0)
+    {
+      b++;
+    }
+    c--;
+  }
+  if(b==2)
+  {
+    cout<<"Prime number";
+  }
+  else{
+    cout<<"not prime number";
+  }
 }*/
+
+
+
+
+#include<iostream>
+using namepace std;
+int main()
+{
+  int a,b=0;c
+  cout<<"enter any no";
+  cin>>a;
+c=a-1;
+while(c>1)
+{
+  if(a%c==0)
+  {
+    b++;
+    break;
+  }
+  c--;
+}
+if(b==0)
+{
+  cout<<"Prime number";
+}
+else                                      
+{
+  cout<<"Not prime";
+}
+}
+

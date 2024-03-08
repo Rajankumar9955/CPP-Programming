@@ -30,3 +30,21 @@ int main()
     cout<<a<<" "<<b<<" "<<endl;
     return 0;
 }
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a,b,c;
+//     cout<<"enter first number:";
+//     cin>>a;
+//     cout<<"enter the second number:";
+//     cin>>b;
+
+
+//     c=a;
+//     a=b;
+//     b=c;
+//     cout<<"after swapping of two number is:";
+//     cout<<a<<b;
+// }

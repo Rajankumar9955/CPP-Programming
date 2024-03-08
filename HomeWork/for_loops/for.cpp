@@ -176,6 +176,9 @@ default:
         cout<<x<<" "<<y;
     }
     
+
+
+    
     // for(int r=3; r>=1; --r)
     // {
     //     for(int c=1; c<=r; c++)
@@ -187,6 +190,10 @@ default:
     //     cout<<"\n";
     // }
 }
+
+
+
+
 /*int main()
 {
      int a=1;
