@@ -14,5 +14,5 @@ int main()
     int n;
     cout<<"enter any number:";
     cin>>n;
-    cout<<fact(n);
+    cout<<"factorial="<<fact(n);
 }
