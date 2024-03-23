@@ -23,22 +23,24 @@
 
 #include<iostream>
 using namespace std;
-void swap(int start, int end)
+void swp(int s,int e)
 {
     int temp;
-    temp=start;
-    start=end;
-    end=temp;
-    cout<<"start="<<start<<"\n";
-    cout<<"End="<<end;
-    
+    temp=s;
+    s=e;
+    e=temp;
+    cout<<"s="<<s<<"\n";
+    cout<<"e="<<e<<"\n";
 }
+
 int main()
 {
     int s,e;
-    cout<<"enter first number:";
+    cout<<"enter the start number:";
     cin>>s;
-    cout<<"enter second number:";
+    cout<<"enter the second number:";
     cin>>e;
-    swap(s,e);
+    swp(s,e);
 }
+
+

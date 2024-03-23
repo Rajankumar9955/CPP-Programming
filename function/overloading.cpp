@@ -21,21 +21,21 @@
 
 #include<iostream>
 using namespace std;
-void overRide(int a)
+void override(int s)
 {
-    cout<<a*a<<"\n";
+    cout<<s*s<<"\n";
 }
-void overRide(int a,int b)
+void override(int s, int a)
 {
-    cout<<a+b;
+    cout<<s+a<<"\n";
 }
 int main()
 {
-    int Raj,Rajan;
+    int s,a;
     cout<<"enter the first number:";
-    cin>>Raj;
+    cin>>s;
     cout<<"enter the second number:";
-    cin>>Rajan;
-    overRide(Raj);
-    overRide(Raj,Rajan);
+    cin>>a;
+    override(s);
+    override(s,a);
 }

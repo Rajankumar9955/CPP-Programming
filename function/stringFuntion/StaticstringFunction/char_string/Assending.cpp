@@ -1,4 +1,4 @@
-   #include<iostream>
+/*   #include<iostream>
    #include<cstring>
    #include<cmath>
    using namespace std;
@@ -22,3 +22,27 @@
     cout<<c1;
    
    }
+*/
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+  char r[20];
+  int s;
+  cout<<"enter the word:";
+  cin>>r;
+  s=strlen(r);
+  for(int i=0; i<s; ++i)
+  {
+    for(int j=0; j<s-i-1; ++j)
+    {
+      if(r[j]>r[j+1])
+      {
+        swap(r[j],r[j+1]);
+      }
+    }
+  }
+  cout<<r;
+}

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Rajan Kumar/OneDrive/Desktop/c++ programming/c++",
-      "program": "c:/Users/Rajan Kumar/OneDrive/Desktop/c++ programming/c++/build/Debug/outDebug",
+      "cwd": "c:/Users/Rajan Kumar/OneDrive/Desktop/c++ programming/c++/c++_Test2",
+      "program": "c:/Users/Rajan Kumar/OneDrive/Desktop/c++ programming/c++/c++_Test2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

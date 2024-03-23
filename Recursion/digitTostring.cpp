@@ -1,7 +1,7 @@
 #include<iostream>
 // #include<cstring>
 using namespace std;
-void dgt (int p,string s[])
+void dgt(int p,string s[])
 {
     if(p==0)
     {
@@ -16,8 +16,8 @@ cout<<s[d];
 int main()
 {
     int p;
-    string arr[10]={"zero","one","two","three","four","five","six","seven","eight","nine"};
+    string arr[10]={"zero\t","one\t","two\t","three\t","four\t","five\t","six\t","seven\t","eight\t","nine\t"};
     cout<<"enter number\n";
     cin>>p;
-    dgt[p,arr];
+    dgt(p,arr);
 }

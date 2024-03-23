@@ -50,3 +50,23 @@ int main()
     cin>>end;
     Range(start,end);
 }
+
+#include<iostream>
+using namespace std;
+void range( int s,int e)
+{
+    for(s; s<e; ++s)
+    {
+        if()
+    }
+}
+int main()
+{
+    int start,end;
+    cout<<"enter first number\n";
+    cin>>start;
+    cout<<"enter second number\n";
+    cin>>end;
+    range(start,end);
+
+}

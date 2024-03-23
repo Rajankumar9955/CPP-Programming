@@ -1,4 +1,4 @@
-// #include<iostream>
+#include<iostream>
 // using namespace std;
 // int  fact(int n)
 // {
@@ -16,22 +16,3 @@
 //     cin>>n;
 //     cout<<"factorial="<<fact(n);
 // }
-
-#include<iostream>
-using namespace std;
-int fact(int n)
-{
-  if(n==0 || n==1)
-  {
-    return n;
-  }
-  int r=n*fact(n-1);
-  return r;
-}
-int main()
-{
-  int n;
-  cout<<"enter the numbr:";
-  cin>>n;
-  cout<<"factorial="<<fact(n);
-}

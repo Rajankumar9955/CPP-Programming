@@ -1,3 +1,28 @@
+// #include<iostream>
+// using namespace std;
+// int fib(int f)
+// {
+//     if(f==0)
+//     {
+//         return 0;
+//     }
+//     if(f==1)
+//     {
+//         return 1;
+//     }
+//     int ans = fib (f-1)+fib(f-2);
+//     return ans;
+// }
+// int main()
+// {
+//     int n;
+//     cout<<"enter fibonacci term:";
+//     cin>>n;
+//     cout<<fib(n);
+// }
+
+
+
 #include<iostream>
 using namespace std;
 int fib(int f)
@@ -10,13 +35,14 @@ int fib(int f)
     {
         return 1;
     }
-    int ans = fib (f-1)+fib(f-2);
+    int ans = fib(f-1)+fib(f-2);
     return ans;
 }
 int main()
 {
     int n;
-    cout<<"enter fibonacci term:";
+    cout<<"enter the number:";
     cin>>n;
     cout<<fib(n);
 }
+

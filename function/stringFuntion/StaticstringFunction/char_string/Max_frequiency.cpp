@@ -39,20 +39,21 @@ int main()
 {
     char c1[20];
     int s;
-    cout<<"enter word\n";
+    cout<<"enter the word:";
     cin>>c1;
     s=strlen(c1);
     int p=0;
     char t;
     for(int i=0; i<s; ++i)
-    {
+    {    
         int c=0;
         for(int j=0; j<s; ++j)
         {
             if(c1[i]==c1[j])
             {
-                c++;
+              c++;
             }
+
         }
         if(c>p)
         {
@@ -60,7 +61,6 @@ int main()
             t=c1[i];
         }
     }
-    cout<<"charater="<<t<<"\n";
-    cout<<"Times="<<s;
+    cout<<"character="<<t<<"\n";
+    cout<<"Times="<<p;
 }
-  

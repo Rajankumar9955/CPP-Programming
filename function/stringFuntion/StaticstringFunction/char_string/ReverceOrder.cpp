@@ -1,4 +1,4 @@
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 #include<cstring>
 int main()
@@ -13,3 +13,21 @@ int main()
         cout<<c[i];
     }
 }
+*/
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    char r[20];
+    int s;
+    cout<<"enter the word:";
+    cin>>r;
+    s=strlen(r);
+    for(int i=s-1; i>=0; --i)
+    {
+        cout<<r[i];
+    }
+}
+
