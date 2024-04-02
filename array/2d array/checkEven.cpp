@@ -10,7 +10,7 @@ int main()
      {
         if(a[r][c]/2!=0)
         {
-            cout<<"even number";
+            cout<<"even number\t";
         }
         
      }
