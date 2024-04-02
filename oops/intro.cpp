@@ -3,9 +3,14 @@ using namespace std;
 class joy
 {
     int a,b;
-    void sum()
+   public: void sum()
     {
         a=10;b=50;
         cout<<a+b;
     }
+};
+int main()
+{
+    joy k;
+    k.sum();
 }
