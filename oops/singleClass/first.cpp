@@ -19,3 +19,4 @@ int main()
     cin>>b;
     r.sum(a,b);
 }
+
