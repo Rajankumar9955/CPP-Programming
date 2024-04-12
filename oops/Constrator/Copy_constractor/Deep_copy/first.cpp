@@ -1,3 +1,5 @@
+/*it is use in banking for updation */
+
 #include<iostream>
 using namespace std;
 class top
@@ -11,7 +13,7 @@ class top
     p=new int;
     p=0;
   }
-  top(top &obj)
+  top(top &obj) //own copy or deep copy 
   {
     a=obj.a;
     p=new int;
@@ -22,7 +24,7 @@ class top
     a=x;
     p=&y;
   }
-  void update()
+  void update() 
   {
     a=a+1;
     *p=*p+1;

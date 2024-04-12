@@ -48,7 +48,7 @@
 #include<cstring>
 using namespace std;
 int main()
-{    
+{ 
     // int a,b;
     // cout<<"Enter first word:";
     // cin>>a;
