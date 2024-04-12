@@ -32,7 +32,7 @@ class top
     this->a=a;
     this->b=b;
   }
-  void shoe()
+  void show()
   {
     cout<<"value of a="<<a<<"\n";
     cout<<"value of b="<<b<<"\n";
@@ -46,5 +46,5 @@ int main()
   cout<<"Enter the second number:";
   cin>>b;
   top t(a,b);
-  t.shoe();
+  t.show();
 }

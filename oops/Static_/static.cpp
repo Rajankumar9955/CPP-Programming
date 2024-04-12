@@ -49,7 +49,8 @@ using namespace std;
 //     p.show();
 //     cybrom::result();
 //  }
-class top {
+class top 
+{
     public:int a;
     static int b;
 

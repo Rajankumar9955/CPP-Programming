@@ -5,7 +5,8 @@ int main()
     cout<<"Hello";
 
 }
-class job{
+class job
+{
 public:job()
 {
     cout<<"wel-come\n";
