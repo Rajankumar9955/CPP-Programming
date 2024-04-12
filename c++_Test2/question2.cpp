@@ -55,7 +55,7 @@ int main()
     // cout<<"Enter second word:";
     // cin>>b;
     char s1[]="silent";
-    char s2[]="listen";
+    char s2[]="liste";
     int c1=strlen(s1);
     int c2=strlen(s2);
     int c=0;
@@ -79,6 +79,9 @@ int main()
         {
             cout<<"Not Anagram";
         }
+    }
+    else{
+        cout<<"not anagram"
     }
 
 }

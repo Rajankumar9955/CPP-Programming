@@ -1,3 +1,7 @@
+/*SHALLOW COPY HAVE TWO TYPE 
+(1) IMPLICITLY ASSIGNMENT COPY CONSTRACTOR :- IT HAVING ASSINGMENT OPERATOR
+(2) CALLING COPY CONSTRACTOR EXPLICITLY :- BUT ITS IS CALL DIRECTLY*/ 
+
 // #include<iostream>
 // using namespace std;
 // class top
@@ -66,10 +70,10 @@ int main()
     cout<<"Enter the second number:";
     cin>>b;
     top t(a,b);
-    top t1=t;
+    top t1=t;  //Implicity assignment copy constractor
     t1.show();
     top z;
-    top z1;
+    top z1; // calling copy constractor explicitly
     z=z1;
-    z1.display();
+    z1.display(); 
 }
