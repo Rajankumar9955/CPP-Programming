@@ -1,25 +1,51 @@
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     n,t1=0,t2=1,nextTerm=0;
+//     cout<<"enter any number:";
+//     cin>>n;
+//     for(int i=1; i<=n; ++i)
+//     {
+//        if(i==1)
+//        {
+//          cout<<t1;<<"\n";
+//          continue;
+//        }
+//        if(i==2)
+//        {
+//         cout<<t2<<"\n";
+//              continue;
+//        }
+//        nextTerm =t1+t2;
+//        t1=t2;
+//        t2=nextTerm;
+//     }
+//     cout<<nextTerm<<"\n";
+// }
+
 #include<iostream>
 using namespace std;
 int main()
 {
-    n,t1=0,t2=1,nextTerm=0;
-    cout<<"enter any number:";
+    int n,r1=0, r2=1,nextTerm=0;
+    cout<<"Enter the number please:";
     cin>>n;
-    for(int i=1; i<=n; ++i)
+    for(int i=1; i<n; ++i)
     {
-       if(i==1)
-       {
-         cout<<t1;<<"\n";
-         continue;
-       }
-       if(i==2)
-       {
-        cout<<t2<<"\n";
-             continue;
-       }
-       nextTerm =t1+t2;
-       t1=t2;
-       t2=nextTerm;
-    }
+      if(i==1)
+      {
+        cout<<r1<<"\n";
+        continue;
+      }
+      if(i==2)
+      {
+        cout<<r2<<"\n";
+        continue;
+      }
+      nextTerm=r1+r2;
+      r2=r1;
+      r1=nextTerm;
+    } 
     cout<<nextTerm<<"\n";
 }

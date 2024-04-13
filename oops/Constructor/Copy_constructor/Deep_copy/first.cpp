@@ -1,6 +1,6 @@
 /*it is use in banking for updation */
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class top
 {
@@ -48,4 +48,54 @@ int main()
   t1.update();
   t1.show();
   t.show();
+}*/
+
+#include<iostream>
+using namespace std;
+class raj
+{
+  int s;
+  int *r;
+  public:
+  raj()
+  {
+    s=0;
+    r=new int;
+    r=0;
+  }
+  raj(raj &suraj)
+  {
+      s=suraj.s;
+      *r=*(suraj.r);
+  }
+  raj(int x,int y)
+  {
+    s=x;
+    r=&y;
+  }
+  void update()
+  {
+    s=s+1;
+    *r=*r+1;
+  }
+  void show()
+  {
+    cout<<"value of s="<<s<<"\n";
+    cout<<"value of r="<<*r<<"\n";
+  }
+};
+int main()
+{
+  int a,b;
+  cout<<"Enter the first number:";
+  cin>>a;
+  cout<<"Enter the second number:";
+  cin>>b;
+  raj j(a,b);
+  j.show();
+  raj j1(j);
+  cout<<"After update\n";
+  j1.update(); 
+  j1.show();
+  j.show();
 }

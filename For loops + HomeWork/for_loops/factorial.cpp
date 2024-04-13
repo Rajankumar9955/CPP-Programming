@@ -12,6 +12,8 @@ int main()
   }
   cout<<"factorial of that number:"<<b;
 
-
-
+  
 }
+
+
+
