@@ -10,16 +10,15 @@ using namespace std;
 class top
 {
     int a=0;
-    
     public:void operator ++()
     {
         a=a+1;
         cout<<a<<"\n";
     }
-    void operator--()
+    public:void operator --()
     {
         a=a-1;
-        cout<<a;
+        cout<<a<<"\n";
     }
 };
 int main()
@@ -28,4 +27,3 @@ int main()
     ++t1;
     --t1;
 }
-
