@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/Rajan Kumar/OneDrive/Desktop/c++ programming/c++/oops/Inheritance/single_Inheritance",
+      "program": "c:/Users/Rajan Kumar/OneDrive/Desktop/c++ programming/c++/oops/Inheritance/single_Inheritance/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

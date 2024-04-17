@@ -1,21 +1,67 @@
+/*#include<iostream>
+using namespace std;
 class reward
 {
-    protected:void virus()
+    public:void prize()
     {
-      cout<<"Ur system got hacked"<<"\n";
+        cout<<"Your system got hacked\n";
+
     }
 };
 class sbi:public reward
 {
     public:void prize()
     {
-        virus();
-          cout<<"$2000000"<<"\n";
+        cout<<"$254500255455\n";
+
     }
 };
-class  
+class customer:public sbi
+{
+    public:void cust()
+    {    
+        prize();
+        cout<<"Wel-come customer\n";
+    }
+};
 int main()
 {
-    sbi r;
+    customer r;
+    r.cust();
     r.prize();
+}
+*/
+
+
+#include<iostream>
+using namespace std;
+class reward
+{
+    protected:void prize()
+        {
+          cout<<"Your system got hacked ab";
+
+        }
+};
+class sbi:public reward
+{
+    public:
+    void prize()
+    {
+        cout<<"$4587554\n";
+    }
+};
+class customer: public sbi
+{
+    public: void cust()
+{
+    prize();
+    cout<<"Wel-come customer\n";
+}
+};
+int main()
+{
+    customer obj;
+    obj.cust();
+    obj.prize();
 }
