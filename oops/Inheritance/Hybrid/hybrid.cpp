@@ -39,7 +39,7 @@ int main()
     c.amsg();
     c.smsg();
     /* c.axis::msg();*/    //without virtual 
-    c.msg();              //with virtal
+    c.msg();              //with virtual
     
     
 }

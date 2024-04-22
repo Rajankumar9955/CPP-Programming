@@ -39,6 +39,9 @@ int main()
     s->dfc();
 }
 */
+
+
+
 #include<iostream>
 using namespace std;
 class SBIATM
@@ -79,3 +82,4 @@ int main()
     SBIATM *s=new AXIS();
     s->axshow();
 }
+
