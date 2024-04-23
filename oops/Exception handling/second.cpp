@@ -2,24 +2,22 @@
 using namespace std;
 int main()
 {
-    
-    int array [] = {1,2,3,4,5};
-    int  b = sizeof(array)/sizeof(array[0]);
+    int arr[]={23,56,75,89,45,21,658,75};
+    int r=sizeof(arr)/sizeof(arr[0]);
     int i;
-    cout<<"enter index\n";
+    cout<<"enter the array potion\n";
     cin>>i;
     try
     {
-        if(i>b-1)
+        if(i>r-1)
         {
             throw i;
         }
-        cout<<array[i]<<"\n";
+        cout<<arr[i]<<"\n";
     }
-    catch (int e)
+    catch(int r)
     {
-        cout<<"out of bound\n";
+        cout<<"This position doesn't exist in the array\n";
     }
     cout<<"ok\n";
-
 }
