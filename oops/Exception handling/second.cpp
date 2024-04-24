@@ -5,7 +5,7 @@ int main()
     int arr[]={23,56,75,89,45,21,658,75};
     int r=sizeof(arr)/sizeof(arr[0]);
     int i;
-    cout<<"enter the array potion\n";
+    cout<<"enter the array position\n";
     cin>>i;
     try
     {

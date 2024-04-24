@@ -44,42 +44,37 @@ int main()
 
 #include<iostream>
 using namespace std;
-class SBIATM
+class rbiatm
 {
-    public:virtual void BALANCE()
+    public:virtual void balance()
     {
-       cout<<"welcome to sbi\n";
+        cout<<"welcome to the rbi atm\n";
     }
-    virtual void axshow()
+    virtual void ashow()
     {
-        cout<<"sbimsg\n";
+        cout<<"hello\n";
     }
 };
-class AXIS : public SBIATM
+class sbi:public rbiatm
 {
-    public:void BALANCE()
+    public:void balance()
     {
-        cout<<"welcome axis\n";
-    }
-    public:void axshow()
-    {
-        cout<<"axis show\n";
+        cout<<"welcome to sbi sbi bank\n";
     }
 };
-class PNB : public SBIATM
+class axis:public rbiatm
 {
-    public: void BALANCE()
+    public: void balance()
     {
-        cout<<"welcome PNB\n";
+        cout<<"welcome to the axis bank\n";
+    }
+    public:void ashow()
+    {
+        cout<<"How are you buddy\n";
     }
 };
 int main()
 {
-    // AXIS obj;
-    // SBIATM &s=obj;
-    // s.BALANCE();
-
-    SBIATM *s=new AXIS();
-    s->axshow();
+    rbiatm *s=new axis();
+    s->ashow();
 }
-

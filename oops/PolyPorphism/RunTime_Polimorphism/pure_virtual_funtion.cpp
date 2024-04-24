@@ -35,57 +35,45 @@
 
 #include<iostream>
 using namespace std;
-class RBI
+class rbi
 {
     public: virtual void loan()=0;
     void msg()
     {
-        cout<<"welcome to the rbi\n";
+        cout<<"hello\n";
     }
 };
-class SBI : public RBI
+class sbi:public rbi
 {
-    public: void loan()
+    public:void loan()
     {
-        cout<<"SBI intrest rate=8.5%\n";
+        cout<<"sbi Intrest rate is=8.5%\n";
     }
 };
-class AXIS : public RBI
+class axis: public rbi
 {
-    public: void loan()
+    public:void loan()
     {
-        cout<<"AXIS intrest rate=9.5%\n";
+        cout<<"axis loan inrest rate is=9.5%\n";
     }
 };
-class INDIAN : public RBI
+class indian:public rbi
 {
-    public:
-    void loan()
+    public:void loan()
     {
-        cout<<"INDIAN intrest rate=9.8%\n";
-    }
-};
-class HDFC : public RBI
-{
-    public:
-    void loan()
-    {
-        cout<<"HDFC intrest rate=8.8%\n";
+        cout<<"indian loan intrest rate is 7.9%\n";
     }
 };
 int main()
 {
-   RBI *R;
-   SBI S;
-   R=&S;
-   R->loan();
-   AXIS X;
-   R=&X;
-   R->loan();
-   INDIAN I;
-   R=&I;
-   R->loan();
-   HDFC H;
-   R=&H;
-   R->loan();
+    rbi *r;
+    sbi s;
+    r=&s;
+    r->loan();
+    axis a;
+    r=&a;
+    r->loan();
+    indian n;
+    r=&n;
+    r->loan();
 }
