@@ -48,17 +48,19 @@
 using namespace std;
 class student
 {
-    char sname[10];
-    int marksarray[5];
+    char sname[20];
+    int marks[5];
     int total;
     int tmax;
     public:void assign()
     {
-        cout<<"enter the student name\n";
+        cout<<"enter the student name please\n";
         cin>>sname;
-        cout<<"Enter the student marks\n";
-        cin>>marksarray;
-
+        cout<<"Enter the marks\n";
+        for(int a=0; a<5; ++a)
+        {
+            cin>>marks[a];
+        }
     }
     void compute()
     {
@@ -66,25 +68,17 @@ class student
         tmax=0;
         for(int i=0; i<5; ++i)
         {
-            total=total+marksarray[i];
-            if(total<tmax[i])
+            total=total+marks[i];
+            if(tmax<marks[i])
             {
-                cout<<tmax[i];
+                tmax=marks[i];
             }
         }
-        for(int i=0; i<5; ++i)
-        {
-          if(total<tmax[i])
-          {
-            cout<<tmax[i];
-          }
-        }
-
     }
     void display()
     {
-       cout<<"total number="<<total<<"\n";
-       cout<<"Max marks="<<tmax<<"\n";
+        cout<<"total marks ="<<total<<"\n";
+        cout<<"tmax marks="<<tmax<<"\n";
     }
 };
 int main()
