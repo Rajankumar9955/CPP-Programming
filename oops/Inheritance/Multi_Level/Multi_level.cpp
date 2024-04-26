@@ -43,7 +43,7 @@ class reward
 
         }
 };
-class sbi:public reward
+class sbi:public reward  
 {
     public:
     void prize()

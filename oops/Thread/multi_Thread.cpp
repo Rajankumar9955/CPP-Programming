@@ -1,6 +1,6 @@
 #include<iostream>
-#include<thread>
 using namespace std;
+#include<thread>
 void even(int a)
 {
     for(a;a>=1;--a)
@@ -17,14 +17,16 @@ void odd(int b)
     {
         if(b%2!=0)
         {
-            cout<<"odd number="<<"\t";
+            cout<<"odd number="<<b<<"\t";
         }
     }
 }
 int main()
 {
-    thread r(even,10);
-    thread r1(odd,20);
+    thread r1(even,10);
+    thread r2(odd,20);
+    cout<<"\nby";
     r1.join();
-    r.join();
+    r2.join();
 }
+

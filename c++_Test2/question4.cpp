@@ -1,4 +1,6 @@
 // WAP TO PRINT ARRAY OF TRANSPOSE
+// data members => variables
+// members function=>funtion
 #include<iostream>
 using namespace std;
 int main()
