@@ -31,8 +31,9 @@ class fib
 {
     int n1=0;
     int n2=1;
-    int f;
-    public:fib(int n)
+    int f=0;
+    public:
+    fib(int n)
     {
         cout<<n1<<"\t"<<n2<<"\t";
         while(n!=0)
@@ -48,7 +49,7 @@ class fib
 int main()
 {
     int s;
-    cout<<"enter the number\n";
+    cout<<"enter the fibo number:";
     cin>>s;
     fib f(s);
 }

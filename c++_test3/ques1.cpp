@@ -48,37 +48,38 @@
 using namespace std;
 class student
 {
-    char sname[20];
+    char sname[11];
     int marks[5];
     int total;
     int tmax;
-    public:void assign()
+    public:
+    void assign()
     {
-        cout<<"enter the student name please\n";
+        cout<<"enter the student name please:\n";
         cin>>sname;
-        cout<<"Enter the marks\n";
-        for(int a=0; a<5; ++a)
+        cout<<"enter the marks please:\n";
+        for(int i=0; i<5; ++i)
         {
-            cin>>marks[a];
+            cin>>marks[i];
         }
     }
     void compute()
     {
         total=0;
         tmax=0;
-        for(int i=0; i<5; ++i)
+        for(int a=0; a<5; ++a)
         {
-            total=total+marks[i];
-            if(tmax<marks[i])
+            total=total+marks[a];
+            if(tmax<marks[a])
             {
-                tmax=marks[i];
+                tmax=marks[a];
             }
         }
     }
     void display()
     {
-        cout<<"total marks ="<<total<<"\n";
-        cout<<"tmax marks="<<tmax<<"\n";
+        cout<<"total number ="<<total<<"\t";
+        cout<<"tmax number ="<<tmax<<"\n";
     }
 };
 int main()
