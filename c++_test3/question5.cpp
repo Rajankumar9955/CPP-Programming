@@ -9,7 +9,7 @@ class raj
     }
     public:void show()
     {
-cout<<a;
+      cout<<a;
     }
 };
 int raj::a=0;

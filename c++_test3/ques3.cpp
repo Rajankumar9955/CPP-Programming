@@ -1,25 +1,25 @@
 #include<iostream>
-using namespace std;
 #include<cstring>
+using namespace std;
 class shop
 {
-    int itemcode[100];
-    string itemname[100];
-    float price [100];
+    int ItemCode[100];
+    string ItemName[100];
+    float price[100];
     int total=0;
     int count=0;
-    public: void add()
+    public:void add()
     {
         for(int i=0; i<100; ++i)
         {
-            cout<<"enter the item code:\n";
-            cin>>itemcode[i];
-            cout<<"enter the itemname:\n";
-            cin>>itemname[i];
-            cout<<"enter the price:\n";
+            cout<<"Enter the Item-Code:";
+            cin>>ItemCode[i];
+            cout<<"Enter the Item-Name:";
+            cin>>ItemName[i];
+            cout<<"Enter the Price:";
             cin>>price[i];
             int n;
-            cout<<"enter the 1 to continue shopping\nand enter the 0 to calculate bill:";
+            cout<<"Press the 1 to continue shopping or Press 0 to Generate the bills: ";
             count++;
             cin>>n;
             if(n==1)
@@ -30,54 +30,56 @@ class shop
             {
                 break;
             }
+
         }
     }
     void show()
     {
-        cout<<"\n"<<"\n";
-        cout<<"itemcode"<<"\t"<<"itemname"<<"\t\t"<<"price"<<"\n";
+        cout<<"\n";
+        cout<<"Item-Code"<<"\t"<<"Item-Name"<<"\t"<<"Price"<<"\n";
         for(int i=0; i<count; ++i)
         {
-            cout<<itemcode[i]<<"\t"<<"\t"<<itemname[i]<<"\t"<<"\t"<<price[i]<<"\n";
+            cout<<ItemCode[i]<<"\t\t"<<ItemName[i]<<"\t\t"<<price[i]<<"\n";
             total=total+price[i];
         }
         cout<<"\n";
-        cout<<"total bill="<<total<<"\n";
-
+        cout<<"Total Items Bills:"<<total;
     }
-    void countitem()
+    void CountItem()
     {
-        cout<<"\n"<<"\n";
-        cout<<"total number of item="<<count<<"\n";
-
+        cout<<"\n";
+        cout<<"Total Items:"<<count<<"\n";
     }
     void cancel()
     {
-        cout<<"\n"<<"\n";
+        cout<<"\n";
         int s;
-        cout<<"enter item code to cancel the product:";
+        cout<<"Enter the Item-Code for cancel:";
         cin>>s;
-        for(int i=0; i<count; ++i)
+        for(int i=0;i<count; ++i)
         {
-            if(itemcode[i]==s)
-            {
-                itemcode[i]=0;
-                itemname[i]="0";
-                price[i]=0;
-                total=0;
-            }
+        if(ItemCode[i]==s)
+        {
+            ItemCode[i]=0;
+            ItemName[i]="0";
+            price[i]=0;
+            total=0;
         }
+        else if(ItemCode[i]!=s)
+        {
+            cout<<"This is Invalid Item-Code:";
+            break;
+        }
+        cout<<"\n";
     }
-    
+    }
 };
 int main()
 {
-   
-        shop p;
-        p.add();
-        p.show();
-        p.countitem();
-        p.cancel();
-        p.show();
-    
+    shop p;
+    p.add();
+    p.show();
+    p.CountItem();
+    p.cancel();
+    p.show();
 }
