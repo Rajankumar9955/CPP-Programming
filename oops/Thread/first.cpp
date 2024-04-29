@@ -17,7 +17,7 @@
 //     {
 //         if(b%2!=0)
 //         {
-//             cout<<"odd number="<<"\t";
+//             cout<<"odd number="<<b<<"\t";
 //         }
 //     }
 // }
@@ -27,29 +27,33 @@
 //     odd(20);
 // }
 
+
 #include<iostream>
+#include<thread>
 using namespace std;
 void even(int a)
 {
-    for(a;a>=1;a--)
+    for(a; a>=1; --a)
     {
-        if(a%2==0)
+        if(a%2==2)
         {
-            cout<<"even number="<<a<<"\n";
+            cout<<"Even number:"<<a;
         }
     }
 }
-void odd(int b)
+void odd(int s)
 {
-    for(b;b>=1;--b)
+    for(s; s>=1; --s)
     {
-        if(b%2!=0)
-        cout<<"odd number="<<b<<"\n";
+        if(s%2!=0)
+        {
+            cout<<"odd number:"<<s;
+        }
     }
 }
 int main()
 {
     even(15);
-    cout<<"bye"<<"\n";
+    // cout<<"by\n";
     odd(10);
 }
