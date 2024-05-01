@@ -45,7 +45,44 @@
 //     cout<<"original    \n";
 //     for(int r=0; r<3; ++r)
 //     {
-//         for(int c=0; c<3; ++c)
+//         for(int c=0; c<2; ++c)
+//         {
+//             cout<<a[r][c]<<"\t";
+
+//         }
+//         cout<<"\n";
+
+//     }
+//     cout<<"Transpose matrix are";
+//     for(int r=0; r<3; ++r)
+//     {
+//         for(int c=0; c<2; ++c)
+//         {
+//             tr[r][c]=a[r][c];
+//         }
+//     }
+//     cout<<"\n";
+//     for(int r=0; r<3; ++r)
+//     {
+//         for(int c=0; c<2; ++c)
+//         {
+//              cout<<tr[r][c]<<"\t";
+//         }
+//         cout<<"\n";
+//     }
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[2][3]={1,2,3,4,5,6};
+//     int tr[3][2];
+//     cout<<"original \n";
+//     for(int r=0; r<3; ++r)
+//     {
+//         for(int c=0; c<2; ++c)
 //         {
 //             cout<<a[r][c];
 
@@ -58,52 +95,56 @@
 //     {
 //         for(int c=0; c<2; ++c)
 //         {
-//             tr[r][c]=a[c][r];
+//             tr[r][c]=a[r][c];
 //         }
 //     }
 //     cout<<"\n";
-//     for(int r=0; r<2; ++r)
+//     for(int r=0; r<3; ++r)
 //     {
-//         for(int c=0; c<2; ++c){
-//              cout<<tr[r][c]<<"\t";
+//         for(int c=0; c<2; ++c)
+//         {
+//            cout<<tr[r][c];
 //         }
 //         cout<<"\n";
 //     }
 // }
 
 
+
+
+
+
+
 #include<iostream>
 using namespace std;
 int main()
 {
-    int a[2][3]={1,2,3,4,5,6};
-    int tr[3][2];
-    cout<<"original \n";
-    for(int r=0; r<2; ++r)
-    {
-        for(int c=0; c<3; ++c)
-        {
-            cout<<a[r][c];
-
-        }
-        cout<<"\n";
-
-    }
-    cout<<"Transpose matrix are\n";
-    for(int r=0; r<2; ++r)
-    {
-        for(int c=0; c<3; ++c)
-        {
-            cout<<tr[r][c]=a[c][r];
-        }
-    }
-    cout<<"\n";
+    int arr[3][2]={1,2,3,4,5,6};
+    int tr[2][3];
+    cout<<"Original:\n";
     for(int r=0; r<3; ++r)
     {
         for(int c=0; c<2; ++c)
         {
-           cout<<tr[r][c];
+            cout<<arr[r][c]<<"\t";
         }
         cout<<"\n";
     }
+    cout<<"Transpose matrix:";
+    for(int r=0; r<3; ++r)
+    {
+        for(int c=0; c<2; ++c)
+        {
+           tr[r][c] = arr[r][c];
+        }
+    }
+    cout<<"\n";
+   for(int r=0; r<3; ++r)
+   {
+    for(int c=0; c<2; ++c)
+    {
+        cout<<tr[r][c]<<"\t";
+    }
+    cout<<"\n";
+   }
 }

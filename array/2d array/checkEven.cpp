@@ -10,13 +10,17 @@ int main()
      {
         if(a[r][c]/2!=0)
         {
-            cout<<"even number\t";
+            cout<<"even number\n";
+            sum=sum+a[r][c];
+           
         }
         
      }
     
 
     }
+    cout<<"sum:"<<sum;
+
    
     
 }

@@ -1,10 +1,11 @@
+// WAP to count Bit
 #include<iostream>
 using namespace std;
 int main()
 {
     int counts=0;
     int a;
-    cout<<"enter binary number:";
+    cout<<"Enter the binary number:";
     cin>>a;
     while(a!=0)
     {
@@ -15,5 +16,4 @@ int main()
         a=a>>1;
     }
     cout<<counts;
-    
 }

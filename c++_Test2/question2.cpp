@@ -54,7 +54,7 @@ int main()
     // cin>>a;
     // cout<<"Enter the second word";
     // cin>>b;
-    char size1[]="rav";
+    char size1[]="ravi";
     char size2[]="ivra";
     int len1=strlen(size1);
     int len2=strlen(size2);
