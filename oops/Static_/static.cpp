@@ -2,7 +2,7 @@
 
 // (static data member)
 //static data member is accessble throghout the entire program
-//we can declrear static data member or variable with the help of static keyword
+//we can declare static data member or variable with the help of static keyword
 
 //ex  syntax 
 //         static int a
