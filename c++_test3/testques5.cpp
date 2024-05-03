@@ -1,11 +1,13 @@
 #include<iostream>
 using namespace std;
 int main()
-{
+{   
+    double a=1.1;
+    float b=1.1f;
     try
     {
-        throw 1.1;
-        throw 1.2f;
+        throw a;
+        throw b;
     }
     catch(double r)
     {
@@ -15,4 +17,5 @@ int main()
     {
         cout<<"float:"<<s;
     }
+
 }
