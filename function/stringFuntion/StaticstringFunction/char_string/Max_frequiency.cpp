@@ -1,3 +1,7 @@
+/*
+=========================maxfrequiency of word=============
+*/
+
 // #include<iostream>
 // #include<cstring>
 // // #include<cmath>

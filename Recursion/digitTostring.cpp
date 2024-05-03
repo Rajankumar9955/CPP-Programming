@@ -1,5 +1,5 @@
 #include<iostream> 
-// #include<cstring>
+#include<cstring>
 using namespace std;
 void dgt(int p,string s[])
 {

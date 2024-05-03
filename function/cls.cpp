@@ -18,6 +18,4 @@ int a1,b1;
 cout<<"enter two number\n";
 cin>>a1>>b1;
 sum(a1,b1);//call by value//actual parameter/argument
-
-
  }
