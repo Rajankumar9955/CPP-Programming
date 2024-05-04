@@ -36,7 +36,7 @@ int main()
     int arr[]={125,1245,856,575,86,952,3567,5469,5213,5468,4568,75648,9567};
     int s,v;
     s=sizeof(arr)/sizeof(arr[0]);
-    cout<<"Enter the array position";
+    cout<<"Enter the array position:";
     cin>>v;
     try
     {

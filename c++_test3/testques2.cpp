@@ -1,111 +1,149 @@
 
+// #include<iostream>
+// using namespace std;
+// class cybrom2;
+// class cybrom1
+// {
+//    int x;
+//    public:cybrom1(int s)
+//    {
+//     x=s;
+//    }
+//    friend void swap(cybrom1,cybrom2);
+// };
+// class cybrom2
+// {
+//     int y;
+//     public:cybrom2(int e)
+//     {
+//         y=e;
+//     }
+//     friend void swap(cybrom1,cybrom2);
+// };
+// void swap(cybrom1 obj,cybrom2 obj1)
+// {
+//     int temp;
+//     temp=obj.x;
+//     obj.x=obj1.y;
+//     obj1.y=temp;
+//     cout<<"after swapping of x:"<<obj.x<<"\n";
+//     cout<<"after swapping of y:"<<obj1.y<<"\n";
+// }
+// int main()
+// {
+//     int v,e;
+//     cout<<"enter the first number of X:";
+//     cin>>v;
+//     cout<<"enter the second number of Y:";
+//     cin>>e;
+//     cybrom1 obj(v);
+//     cybrom2 obj1(e);
+//     swap(obj,obj1);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // #include <iostream>
+// // using namespace std;
+
+// // class b;
+// // class a
+// // {
+// // 	int x;
+// // 	public:
+// // 	a(int c)
+// // 	{
+// // 		x=c;
+// // 	}
+// // 	friend void swap(a,b);
+// // };
+// // class b
+// // {
+// // 	int y;
+// // 	public:
+// // 	b(int d)
+// // 	{
+// // 		y=d;
+// // 	}
+// // 	friend void swap(a,b);
+// // };
+// // void swap(a e,b f)
+// // {
+// // 	int temp;
+// // 	temp=e.x;
+// // 	e.x=f.y;
+// // 	f.y=temp;
+// // 	cout<<"after swapping value of class a="<<e.x<<endl;
+// // 	cout<<"after swapping value of class b="<<f.y<<endl;
+// // }
+// // int main() {
+// // 	a e(5);
+// // 	b f(3);
+// // 	swap(e,f);
+// // 	return 0;
+// // }
+
+
 #include<iostream>
 using namespace std;
 class cybrom2;
 class cybrom1
 {
-   int x;
-   public:cybrom1(int s)
-   {
-    x=s;
-   }
-   friend void swap(cybrom1,cybrom2);
+    int x;
+    public:cybrom1(int c)
+    {
+      x=c;
+    }
+    friend void swap(cybrom1,cybrom2);
 };
 class cybrom2
 {
     int y;
-    public:cybrom2(int e)
+    public:cybrom2(int d)
     {
-        y=e;
+        y=d;
     }
     friend void swap(cybrom1,cybrom2);
 };
-void swap(cybrom1 obj,cybrom2 obj1)
+void swap(cybrom1 c1, cybrom2 c2)
 {
     int temp;
-    temp=obj.x;
-    obj.x=obj1.y;
-    obj1.y=temp;
-    cout<<"after swapping of x:"<<obj.x<<"\n";
-    cout<<"after swapping of y:"<<obj1.y<<"\n";
+    temp=c1.x;
+    c1.x=c2.y;
+    c2.y=temp;
+    cout<<"After swapping of x value"<<c1.x<<"\n";
+    cout<<"After swapping of y value"<<c2.y<<"\n";
 }
 int main()
 {
-    int v,e;
-    cout<<"enter the first number:";
-    cin>>v;
-    cout<<"enter the second number:";
-    cin>>e;
-    cybrom1 obj(v);
-    cybrom2 obj1(e);
-    swap(obj,obj1);
+    cybrom1 c1(20);
+    cybrom2 c2(30);
+    swap(c1,c2);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// #include <iostream>
-// using namespace std;
-
-// class b;
-// class a
-// {
-// 	int x;
-// 	public:
-// 	a(int c)
-// 	{
-// 		x=c;
-// 	}
-// 	friend void swap(a,b);
-// };
-// class b
-// {
-// 	int y;
-// 	public:
-// 	b(int d)
-// 	{
-// 		y=d;
-// 	}
-// 	friend void swap(a,b);
-// };
-// void swap(a e,b f)
-// {
-// 	int temp;
-// 	temp=e.x;
-// 	e.x=f.y;
-// 	f.y=temp;
-// 	cout<<"after swapping value of class a="<<e.x<<endl;
-// 	cout<<"after swapping value of class b="<<f.y<<endl;
-// }
-// int main() {
-// 	a e(5);
-// 	b f(3);
-// 	swap(e,f);
-// 	return 0;
-// }

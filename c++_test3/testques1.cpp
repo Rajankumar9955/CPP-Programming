@@ -2,29 +2,29 @@
 using namespace std;
 class alpha
 {
-    public:void pha()
+    public: void pha()
     {
-        cout<<"Hello from alpha:\n";
+        cout<<"This is apha class:\n";
     }
 };
-class beta:virtual public alpha 
+class beta : virtual public alpha
 {
-    public: void eta()
+    public:void bet()
     {
-        cout<<"hello from beta:\n";
+        cout<<"This is beta class:\n";
     }
 };
-class gamma:public beta
+class gamma: public beta
 {
-    public : void gama()
+    public:void gama()
     {
-        cout<<"Hello from gamma:\n";
+        cout<<"This is gamma class:\n";
     }
 };
 int main()
 {
     gamma g;
     g.gama();
-    g.eta();
+    g.bet();
     g.pha();
 }

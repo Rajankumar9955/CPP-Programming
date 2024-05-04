@@ -2,20 +2,24 @@
 using namespace std;
 int main()
 {   
-    double a=1.1;
-    float b=1.1f;
-    try
-    {
-        throw a;
-        throw b;
-    }
-    catch(double r)
-    {
-        cout<<"double:"<<r;
-    }
-    catch(float s)
-    {
-        cout<<"float:"<<s;
-    }
-
-}
+    double a;
+    float b;
+    cout<<"enter the double nuber:";
+    cin>>a;
+    cout<<"Enter the float number:";
+    cin>>b;
+   try
+   {
+    if(a==)
+    throw f;
+    throw b;
+   }
+   catch(float c)
+   {
+    cout<<"this is float value:";
+   }
+   catch(const double& b)
+   {
+    cout<<"This is double value:";
+   }
+ 
