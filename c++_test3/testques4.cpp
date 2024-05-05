@@ -72,63 +72,53 @@
 
 
 #include<iostream>
-#include<cstring>
 using namespace std;
 class store
 {
-    int code[100];
-    float price[100];
-    int count=0;
-    int total=0;
-    public:void adding(){
-    for(int i=0; i<100; ++i)
+    int code[5];
+    float price[5];
+    float total=0;
+    public:void adding()
     {
-        cout<<"Enter the item code:";
-        cin>>code[i];
-        cout<<"Enter the Price of Item:";
-        cin>>price[i];
-        int n;
-        cout<<"Press 1 for continue or 0 for generate the tatal value:";
-        count++;
-        cin>>n;
-        if(n==1)
+        for(int i=0; i<5; ++i)
         {
-            continue;
+            cout<<"Enter the Item-Code number:";
+            cin>>code[i];
+            cout<<"Enter the Price of Item:";
+            cin>>price[i];
         }
-        else
-        {
-            break;
-        }
-     }
+        cout<<"\n";
     }
     void show()
     {
-      cout<<"Item\t"<<"Price\n";
-      for(int i=0; i<count; i++)
-      {
-           cout<<code[i]<<"\t"<<price[i]<<"\n";
-           total=total+price[i];
-       }
-       cout<<"\n";
-       cout<<"Total value:"<<total<<"\n";
-    } 
+        cout<<"Item-code\t"<<"Price"<<"\n";
+        for(int i=0; i<5; ++i)
+        {
+            cout<<code[i]<<"\t\t"<<price[i]<<"\n";
+            total=total+price[i];
+        }
+        cout<<"\n";
+        cout<<"Total value of item:"<<total<<"\n";
+    }
     void delet()
     {
-        int s;
-        cout<<"if you you want to delete the item then enter item code:";
-        cin>>s;
-        for(int i=0; i<count; i++)
+        int n;
+        cout<<"Enter Item-Code for delete if you want:";
+        // cin>>n;
+        for(int i=0; i<2; ++i)
         {
-           if(code[i]==s)
-           {
-            code[i]=0;
-            price[i]=0;
-            total=0;
-           }
+            cin>>n[i];
         }
-       
-    } 
-
+        for(int i=0;i<5; ++i)
+        {
+            if(code[i]==n)
+            {
+                code[i]=0;
+                price[i]=0;
+                 total=0;
+            }
+        }
+    }
 };
 int main()
 {

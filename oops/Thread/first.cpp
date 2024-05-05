@@ -37,7 +37,7 @@ void even(int a)
     {
         if(a%2==2)
         {
-            cout<<"Even number:"<<a;
+            cout<<"Even number:"<<a<<"\n";
         }
     }
 }
@@ -47,7 +47,7 @@ void odd(int s)
     {
         if(s%2!=0)
         {
-            cout<<"odd number:"<<s;
+            cout<<"odd number:"<<s<<"\n";
         }
     }
 }

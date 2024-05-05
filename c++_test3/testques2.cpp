@@ -110,27 +110,26 @@
 // // 	return 0;
 // // }
 
-
 #include<iostream>
 using namespace std;
 class cybrom2;
 class cybrom1
 {
     int x;
-    public:cybrom1(int c)
+    public:cybrom1(int s)
     {
-      x=c;
+        x=s;
     }
-    friend void swap(cybrom1,cybrom2);
+   friend void swap(cybrom1 c1,cybrom2 c2);
 };
 class cybrom2
 {
     int y;
-    public:cybrom2(int d)
+    public:cybrom2(int v)
     {
-        y=d;
+        y=v;
     }
-    friend void swap(cybrom1,cybrom2);
+    friend void swap(cybrom1 c1,cybrom2 c2);
 };
 void swap(cybrom1 c1, cybrom2 c2)
 {
@@ -138,12 +137,17 @@ void swap(cybrom1 c1, cybrom2 c2)
     temp=c1.x;
     c1.x=c2.y;
     c2.y=temp;
-    cout<<"After swapping of x value"<<c1.x<<"\n";
-    cout<<"After swapping of y value"<<c2.y<<"\n";
+    cout<<"after swapping x value:"<<c1.x<<"\n";
+    cout<<"after swapping y value:"<<c2.y<<"\n";
 }
 int main()
 {
-    cybrom1 c1(20);
-    cybrom2 c2(30);
+    int x,y;
+    cout<<"enter the x value :";
+    cin>>x;
+    cout<<"enter the y value :";
+    cin>>y;
+    cybrom1 c1(x);
+    cybrom2 c2(y);
     swap(c1,c2);
 }
