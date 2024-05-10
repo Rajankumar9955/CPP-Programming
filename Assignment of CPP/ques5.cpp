@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num;
+    cout<<"Enter the number:";
+    cin>>num;
+    if(num%2==0)
+    {
+        cout<<"even";
+    }
+    else{
+        cout<<"odd number";
+    }
+
+}
+
+/*
+output:-
+Enter the number:10
+even
+*/
