@@ -35,7 +35,7 @@ int fib(int f)
     {
         return 1;
     }
-    int ans = fib(f-1)+fib(f-2);
+    int ans = fib(f-1)+fib(f-2); 
     return ans;
 }
 int main()
